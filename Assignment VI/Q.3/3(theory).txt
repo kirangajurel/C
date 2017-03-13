@@ -1,0 +1,6 @@
+3.Justify that pointer is jewel in C language.
+
+-	A Pointer is a variable that contains address of other variables i.e. a variable that pointer to the
+	location of data item. It provides a way of accessing a variable without referring to the variable directly.
+	It uses the address of the variable. The pointer is called jewel of C language because the real power of
+	C liesin the proper use of pointer. This helps in flexible manipulation of the data and memory as well.

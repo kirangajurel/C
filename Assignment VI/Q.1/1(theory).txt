@@ -1,0 +1,13 @@
+1. What is pointer and explain its applications.
+
+-	A pointer is a variable which contains the address in memory of another variable.
+
+	Applications:
+		Passing Parameter by Reference.
+		Dynamic Memory Allocation or (DMA).
+		Passing String to a function.
+		Reducing size of parameter.
+		Pointer are used to create complex data structures such as link list, trees etc.
+		Pointer increases the execution speeds.
+		Pointer are used to communicate information about memory which returns the location of free memory.
+		E.g. Using like malloc(), calloc(),realloc(),free().

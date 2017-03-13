@@ -1,0 +1,42 @@
+﻿7.  Explain the pointer to structure with example.
+-
+	1.Address of Pointer variable can be obtained using ‘&’ operator.
+	2.Address of such Structure can be assigned to the Pointer variable.
+	3.Pointer Variable which stores the address of Structure must be declared as Pointer to Structure.
+	
+	-	Basically a pointer to a structure means to user pointer to access and manipulate data/memory of the structure.
+	
+	   Syntax for Pointer to Structure: 
+	   
+	   struct student_database
+	   {
+		   char name[10];
+		   int roll;
+		   int marks;
+		}stud1;
+	   struct student_database *ptr;
+	   ptr = &stud1;
+	   
+	   And there is mainly two ways to do this:
+	1.Referencing pointer to another address to access memory
+	2.Using dynamic memory allocation
+Example:
+/*
+#include <stdio.h>
+int main()
+{
+          struct student_database
+{
+    char name[10];
+    int roll;							
+    int marks;
+}stud1;								
+
+stud1.roll = 10;
+stud1.marks = 90;
+
+printf("Roll Number : %d\n",stud1.roll);
+printf("Marks of Student : %d\n",stud1.marks);
+
+return 0;
+}*/

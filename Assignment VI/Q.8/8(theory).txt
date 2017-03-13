@@ -1,0 +1,60 @@
+8.	Explain the pointer arithmetic with example.
+-
+	A pointer in c is an address, which is a numeric value. Therefore, you can perform arithmetic operations on a pointer
+	just as you can on a numeric value. There are four arithmetic operators that can be used on pointers: ++, --, +, and -
+	To understand pointer arithmetic, let us consider that ptr is an integer pointer which points to the address 1000.
+	
+	Assuming 32-bit integers, let us perform the following arithmetic operation on the pointer -
+		ptr++
+		
+	After the above operation, the ptr will point to the location 1004 because each time ptr is incremented,
+	it will point to the next integer location which is 4 bytes next to the current location. This operation will move the pointer
+	to the next memory location without impacting the actual value at the memory location. If ptr points to a character whose
+	address is 1000, then the above operation will point to the location 1001 because the next character will be available at 1001.
+
+Example 1.
+
+/*
+
+PROGRAM-INCREMENT
+
+
+#include <stdio.h>
+int MAX = 3;
+int main () {
+
+   int  var[] = {10, 100, 200};
+   int  i, *ptr;
+   ptr = var;
+	for ( i = 0; i < MAX; i++) {
+	printf("Address of var[%d] = %x\n", i, ptr );
+      printf("Value of var[%d] = %d\n", i, *ptr );
+      ptr++;
+   }
+	return 0;
+}
+	
+*/
+Example 2.
+/*
+
+PROGRAM -DECREMENT
+
+
+#include <stdio.h>
+int MAX = 3;	
+int main () {
+	int  var[] = {10, 100, 200};
+   int  i, *ptr;
+   ptr = var;
+   i = 0;
+	while ( ptr <= &var[MAX - 1] ) {
+	  printf("Address of var[%d] = %x\n", i, ptr );
+      printf("Value of var[%d] = %d\n", i, *ptr );
+      ptr++;
+      i++;
+   }
+	return 0;	
+}
+
+*/

@@ -1,0 +1,23 @@
+12. How is malloc() function different from calloc()  function?
+-
+	This Malloc() is different from Calloc() by following ways;
+
+	Malloc:
+	-The name malloc stands for memory allocation, whereas 
+	The name calloc stands for contiguous allocation.
+
+
+	-Malloc() takes one argument that is, number of bytes, whereas 
+	Calloc() take two arguments those are: number of blocks and size of each block.
+
+	-syntax of malloc(): void *malloc(size_t n); whereas
+	syntax of calloc(): void *calloc(size_t n, size_t size);
+	 
+	-Allocates n bytes of memory. If the allocation succeeds, a void pointer to the allocated memory is returned.
+	 Otherwise NULL is returned. Whereas
+	 Allocates a contiguous block of memory large enough to hold n elements of sizebytes each. The allocated region is
+	 initialized to zero.
+	 
+
+	-Malloc is faster than calloc, Whereas
+	Calloc takes little longer than malloc because of the extra step of initializing the allocated memory by zero.

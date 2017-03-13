@@ -1,0 +1,21 @@
+9.	What is Dynamic Memory Allocation (DMA)? How can you use it in C?
+-
+	C dynamic memory allocation refers to performing manual memory management for dynamic memory allocation in the C 
+	programming language via a group of functions in the C standard library, namely malloc, realloc, calloc and free.
+	Although, C language inherently does not have any technique to allocate memory dynamically, there are 4 library functions
+	under "stdlib.h" for dynamic memory allocation.
+
+	Function And Use of Function
+	
+	malloc(): Allocates requested size of bytes and returns a pointer first byte of allocated space.
+	
+	calloc(): Allocates space for an array elements, initializes to zero and then returns a pointer to memory.
+	
+	free(): Deallocate the previously allocated space.
+	
+	realloc(): Change the size of previously allocated space.
+
+	Now, for example: 
+	
+	Syntax of malloc()
+	ptr = (cast-type*) malloc(byte-size)
